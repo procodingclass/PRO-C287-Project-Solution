@@ -59,8 +59,8 @@ while (robot.step(timestep) != -1):
     if(prev_key == -1  and  key_pressed==83):
         cam.getImage()
         img_name= "pic"+str(pic_num)+".png"
-        cam.saveImage(img_name,50)
-        img_num=img_num+1
+        cam.saveImage(pic_name,50)
+        pic_num=pic_num+1
         
     if(autoMode):      
         ds_left_value = ds_left.getValue()
