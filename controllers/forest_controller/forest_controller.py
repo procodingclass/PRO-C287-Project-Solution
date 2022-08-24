@@ -58,7 +58,7 @@ while (robot.step(timestep) != -1):
     # press "s" key to take pictures
     if(prev_key == -1  and  key_pressed==83):
         cam.getImage()
-        img_name= "pic"+str(pic_num)+".png"
+        pic_name= "pic"+str(pic_num)+".png"
         cam.saveImage(pic_name,50)
         pic_num=pic_num+1
         
